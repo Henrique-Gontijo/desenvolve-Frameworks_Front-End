@@ -8,26 +8,58 @@
     </head>
     <body>
         <div class="container">
-            <p class="h2">Popover e Tooltip</p>
+            <p class="h2">Carousel</p>
             
-            <button type="button" class="btn btn-primary mt-5" 
-            data-bs-toggle="popover" data-bs-title="Título Popover" 
-            data-bs-content="Teste de mesagem" data-bs-placement="right">
-                Habilitar Popover
-            </button>
-            <p class="mt-5">
-                Teste de visualização do <a href="#"
-                data-bs-toggle="tooltip" data-bs-title="Teste de mensagem Tooltip">Tooltip</a>
-            </p>
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner ">
+                    <div class="carousel-item active">
+                        <img src="./cj.webp" class="d-block w-100" alt="Oh shit, here we go again">
+                        <div class="carousel-caption d-md-block">
+                            <h5>CJ</h5>
+                            <p>Oh shit, here we go again!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="./big_smoke.jpg" class="d-block w-100" alt="I'll have two number 9s, a number 9 large...">
+                        <div class="carousel-caption d-md-block">
+                            <h5>Big Smoke</h5>
+                            <p>I'll have two number 9s, a number 9 large...</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./sweet.png" class="d-block w-100" alt="Grove Street is king!">
+                        <div class="carousel-caption d-md-block">
+                            <h5>Sweet</h5>
+                            <p>Grove Street is king!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./ryder.jpg" class="d-block w-100" alt="I am the real deal, fool. Oh yeah. A genius.">
+                        <div class="carousel-caption d-md-block">
+                            <h5>Ryder</h5>
+                            <p>I am the real deal, fool. Oh yeah. A genius.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+            </div>
         </div>
         
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-        <script>
-            const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
-            const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
-
-            const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-            const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
-        </script>
     </body>
 </html>
