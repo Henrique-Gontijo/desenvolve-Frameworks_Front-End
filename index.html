@@ -36,7 +36,7 @@
                                 <a class="nav-link" href="#servicos">Serviços</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#portifolio">Portfólio</a>
+                                <a class="nav-link" href="#portfolio">Portfólio</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#precos">Preços</a>
@@ -50,7 +50,7 @@
                         </ul>
 
                         <div class="col-lg-2 justify-content-lg-end">
-                            <a href="#" class="btn btn-outline-primary">
+                            <a href="https://wa.me" class="btn btn-outline-primary" target="_blank">
                                 <i class="bi bi-whatsapp"></i>31 99123-4567
                             </a>
                         </div>
@@ -64,7 +64,7 @@
         <main>
             <!-- Section Home -->
 
-            <section class="mt-5">
+            <section id="servicos" class="mt-5">
                 <div class="container">
 
                     <!-- Home Chamada -->
@@ -377,7 +377,7 @@
 
             <!-- Section Portifólio -->
 
-            <section class="mt-5">
+            <section id='portfolio' class="mt-5">
                 <div class="container">
                     <div class="row justify-content-center mb-3">
                         <div class="col-12 col-md-10 col-lg-8 text-center">
@@ -394,14 +394,18 @@
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                         <div class="col">
                             <div class="card shadow-sm">
-                                <img src="https://picsum.photos/948/474" class="bd-placeholder-img card-img-top img-fluid" width="100%" height="225">
+                                <img src="https://picsum.photos/id/250/948/474" 
+                                    class="bd-placeholder-img card-img-top img-fluid" width="100%" height="225">
                                 <div class="card-body">
                                     <p class="card-text">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint voluptatem cupiditate ea illum neque commodi.
                                     </p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                            <a href="#" class="btn btn-sm btn-outline-primary">Visualizar</a>
+                                            <a href="#" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalPortfolio"
+                                                data-img="https://picsum.photos/id/250/1248/624">
+                                                Visualizar
+                                            </a>
                                         </div>
                                         <small class="text-body-secondary">15/07/2024</small>
                                     </div>
@@ -410,14 +414,18 @@
                         </div>
                         <div class="col">
                             <div class="card shadow-sm">
-                                <img src="https://picsum.photos/948/475" class="bd-placeholder-img card-img-top img-fluid" width="100%" height="225">
+                                <img src="https://picsum.photos/id/0/948/474" 
+                                    class="bd-placeholder-img card-img-top img-fluid" width="100%" height="225">
                                 <div class="card-body">
                                     <p class="card-text">
-                                        Suscipit ullam quam optio omnis, nihil a atque voluptatum beatae animi sequi, sed doloremque.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint voluptatem cupiditate ea illum neque commodi.
                                     </p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                            <a href="#" class="btn btn-sm btn-outline-primary">Visualizar</a>
+                                            <a href="#" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalPortfolio"
+                                                data-img="https://picsum.photos/id/0/1248/624">
+                                                Visualizar
+                                            </a>
                                         </div>
                                         <small class="text-body-secondary">07/10/2024</small>
                                     </div>
@@ -426,14 +434,18 @@
                         </div>
                         <div class="col">
                             <div class="card shadow-sm">
-                                <img src="https://picsum.photos/948/476" class="bd-placeholder-img card-img-top img-fluid" width="100%" height="225">
+                                <img src="https://picsum.photos/id/412/948/474"
+                                    class="bd-placeholder-img card-img-top img-fluid" width="100%" height="225">
                                 <div class="card-body">
                                     <p class="card-text">
-                                        Magni animi alias minus ratione neque non dolorem officia nihil assumenda, dolorum, possimus veritatis beatae.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint voluptatem cupiditate ea illum neque commodi.
                                     </p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                            <a href="#" class="btn btn-sm btn-outline-primary">Visualizar</a>
+                                            <a href="#" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalPortfolio"
+                                            data-img="https://picsum.photos/id/412/1248/624">
+                                                Visualizar
+                                            </a>
                                         </div>
                                         <small class="text-body-secondary">25/12/2025</small>
                                     </div>
@@ -446,7 +458,7 @@
 
             <!-- Section Preços -->
 
-            <section class="mt-5 py-5 border-top border-bottom border-gray-300 bg-light">
+            <section id="precos" class="mt-5 py-5 border-top border-bottom border-gray-300 bg-light">
                 <div class="container">
 
                     <div class="row justify-content-center mb-3">
@@ -546,7 +558,7 @@
 
             <!-- Section FAQ -->
 
-            <section class="mt-5">
+            <section id="faq" class="mt-5">
                 <div class="container">
 
                     <div class="row justify-content-center mb-3">
@@ -697,7 +709,7 @@
             </section>
 
             <!-- Section Contato -->
-            <section class="py-5 py-md5 border-bottom border gray-300">
+            <section id="contato" class="py-5 py-md5 border-bottom border gray-300">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-4 text-center border-end border-gray-300">
@@ -850,7 +862,7 @@
                                 <li class="nav-item mb-2"><a href="#home" class="nav-link p-0 text-body-secondary">Home</a></li>
                                 <li class="nav-item mb-2"><a href="#agencia" class="nav-link p-0 text-body-secondary">Agência</a></li>
                                 <li class="nav-item mb-2"><a href="#serviços" class="nav-link p-0 text-body-secondary">Serviços</a></li>
-                                <li class="nav-item mb-2"><a href="#portfólio" class="nav-link p-0 text-body-secondary">Portifólio</a></li>
+                                <li class="nav-item mb-2"><a href="#portfolio" class="nav-link p-0 text-body-secondary">Portfólio</a></li>
                             </ul>
                         </div>
                         <div class="col-6 col-md-2 mb-3 mt-md-0">
@@ -901,8 +913,27 @@
 
         </footer>
 
+        <!-- Modal Portfólio -->
+
+        <div class="modal fade" id="modalPortfolio" tabindex="-1" aria-labelledby="modalPortfolioLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modalPortfolioLabel">Portfólio</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img id="modalImage" src="" class="img-fluid" />
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-        <script src="./assets/js/script.js"></script>
+        <script src="./assets/js/scripts.js"></script>
     </body>
 </html>
